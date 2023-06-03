@@ -1,65 +1,37 @@
 <!DOCTYPE html> 
 <html>
   <head>
-    <title>Samiksha's Jobs Wesbite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
-      h1{
-        font-size: 40px;
-        font-family : Roboto;
-        color: green;
-        font-weight: normal;
-        text-align: center;
-        
-       
-      }
       #bannerimage{
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
+        object-fit:cover;
+        max-height:320px;
+        width: 100% ;
       }
-
-      h2{
-        font-family: Roboto;
-        font-size: 32px;
-        color: green;
-        font-weight:normal;
-      }
-
-      p{
-        font-family: Roboto;
-        
-      }
-
-      #main_para{
-        max-width:720px;
-        margin:0 auto 0 auto;
-        
-      }
-      #contact_us{
-        text-align: center;
-      }
-
       
     </style>
+    <title>Samiksha's Jobs Wesbite</title>
+    
   </head>
   <body>
-    <div id = "main_para"> 
-    <h1> Samiksha's Jobs </h1>
-    <img  src = "static/banner.jpeg" height = "320" id= "bannerimage">
-    <h2>About Samiksha</h2>
-    <p>
+    <div class = "container"> 
+    <h1 class = "text-center mt-2 mb-4"> Samiksha's Jobs </h1>
+    <img id= "bannerimage" class ="img-fluid" src = "static/banner.jpeg" height = "320">
+    <h2 class = "text-center mt-5 mb-4">About Samiksha</h2>
+    <p class ="lead">
       
       Samiksha's Jobs is a cutting-edge technology company dedicated to revolutionizing the digital landscape. We specialize in developing innovative solutions that empower businesses to thrive in the fast-paced and ever-evolving world of technology.
 
 Our passionate team of tech enthusiasts and industry experts is committed to delivering high-quality products and services that drive digital transformation. By combining our deep expertise with the latest advancements in artificial intelligence, machine learning, cloud computing, and data analytics, we empower our clients to achieve their business objectives efficiently and effectively.
     </p>
-    <h2>Open Positions</h2>
+    <h2 class = "text-center mt-2 mb-4">Open Positions</h2>
     <p>Show the job openings here</p>
-      <div id = "contact_us">
-    <button>Contact Us</button>
+      <div class ="text-center">
+    <button type="button" class="btn btn-success">Contact Us</button>
       </div>
   </div>
-    
-    
+       
   </body>
 </html>
