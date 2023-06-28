@@ -27,7 +27,15 @@
 Our passionate team of tech enthusiasts and industry experts is committed to delivering high-quality products and services that drive digital transformation. By combining our deep expertise with the latest advancements in artificial intelligence, machine learning, cloud computing, and data analytics, we empower our clients to achieve their business objectives efficiently and effectively.
     </p>
     <h2 class = "text-center mt-2 mb-4">Open Positions</h2>
-    <p>Show the job openings here</p>
+    <div>
+      {% for job in jobs%}
+      <div>
+      <h4 style = "color: gray"> {{job.title}}</h4>
+      <div> <b>Location:{{job.location}}</b> </div>
+      {% endfor %}
+    
+      
+    </div>
       <div class ="text-center">
     <button type="button" class="btn btn-success">Contact Us</button>
       </div>
